@@ -210,7 +210,7 @@ def max_contour(path, show=False):
     img_path = path.split('.jpg')[0]
 
     # 이미지 로드
-    img_edge = cv2.imread(img_path + '.png')
+    img_edge = cv2.imread(img_path + '_dexi.png')
     contour_res = np.ones((img_edge.shape), dtype=np.uint8)*255
 
     # pickle 그대로 불러오기 >> img_pred / 필요한 정보 df 형태로 >> img_pred_df
@@ -339,7 +339,7 @@ def fused(path, show=False):
     img_path = path.split('.jpg')[0]
 
     # 이미지 로드
-    img_edge = cv2.imread(img_path + '.png')
+    img_edge = cv2.imread(img_path + '_dexi.png')
     contour_res = np.ones((img_edge.shape), dtype=np.uint8)*255
 
     # pickle 그대로 불러오기 >> img_pred / 필요한 정보 df 형태로 >> img_pred_df
